@@ -41,6 +41,7 @@
             this.btnpos = new System.Windows.Forms.Button();
             this.btnloan = new System.Windows.Forms.Button();
             this.btnhello = new System.Windows.Forms.Button();
+            this.btnGuess = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -65,8 +66,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1854, 1235);
-            this.splitContainer1.SplitterDistance = 136;
+            this.splitContainer1.Size = new System.Drawing.Size(1854, 1355);
+            this.splitContainer1.SplitterDistance = 149;
             this.splitContainer1.TabIndex = 0;
             // 
             // label1
@@ -89,6 +90,7 @@
             // splitContainer2.Panel1
             // 
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.Gold;
+            this.splitContainer2.Panel1.Controls.Add(this.btnGuess);
             this.splitContainer2.Panel1.Controls.Add(this.btnDraw);
             this.splitContainer2.Panel1.Controls.Add(this.btnScreen);
             this.splitContainer2.Panel1.Controls.Add(this.btn09);
@@ -104,7 +106,7 @@
             // 
             this.splitContainer2.Panel2.BackgroundImage = global::HOMEWORK_FORM.Properties.Resources._1144144;
             this.splitContainer2.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.splitContainer2.Size = new System.Drawing.Size(1854, 1095);
+            this.splitContainer2.Size = new System.Drawing.Size(1854, 1202);
             this.splitContainer2.SplitterDistance = 301;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -208,11 +210,21 @@
             this.btnhello.UseVisualStyleBackColor = true;
             this.btnhello.Click += new System.EventHandler(this.btnhello_Click);
             // 
+            // btnGuess
+            // 
+            this.btnGuess.Location = new System.Drawing.Point(26, 1154);
+            this.btnGuess.Name = "btnGuess";
+            this.btnGuess.Size = new System.Drawing.Size(247, 36);
+            this.btnGuess.TabIndex = 19;
+            this.btnGuess.Text = "11 Guess Number";
+            this.btnGuess.UseVisualStyleBackColor = true;
+            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
+            // 
             // frmhomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1854, 1235);
+            this.ClientSize = new System.Drawing.Size(1854, 1355);
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmhomepage";
             this.Text = "Form1";
@@ -244,6 +256,7 @@
         private System.Windows.Forms.Button btn09;
         private System.Windows.Forms.Button btnScreen;
         private System.Windows.Forms.Button btnDraw;
+        private System.Windows.Forms.Button btnGuess;
     }
 }
 

@@ -147,5 +147,17 @@ namespace HOMEWORK_FORM
             fd.Left = 0;
             splitContainer2.Panel2.Controls.Add(fd);
         }
+
+        private void btnGuess_Click(object sender, EventArgs e)
+        {
+            while (splitContainer2.Panel2.Controls.Count > 0)
+                splitContainer2.Panel2.Controls[0].Dispose();
+            Form10 f10 = new Form10();
+            f10.TopLevel = false;
+            f10.Visible = true;
+            f10.Top = 0;
+            f10.Left = 0;
+            splitContainer2.Panel2.Controls.Add(f10);
+        }
     }
 }

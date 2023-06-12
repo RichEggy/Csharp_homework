@@ -77,6 +77,18 @@
     <Compile Include="Form09.Designer.cs">
       <DependentUpon>Form09.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form10-1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10-1.Designer.cs">
+      <DependentUpon>Form10-1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDraw.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +151,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form09.resx">
       <DependentUpon>Form09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10-1.resx">
+      <DependentUpon>Form10-1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10.resx">
+      <DependentUpon>Form10.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDraw.resx">
       <DependentUpon>FormDraw.cs</DependentUpon>
