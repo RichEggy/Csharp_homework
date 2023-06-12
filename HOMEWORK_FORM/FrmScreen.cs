@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace HOMEWORK_FORM
 {
@@ -25,15 +26,7 @@ namespace HOMEWORK_FORM
             if ((pictureBox1.Location.Y + pictureBox1.Height) > this.ClientSize.Height || pictureBox1.Location.Y < 0)
                 stepY = 0 - stepY;//正變負，負變正，變換方向
             pictureBox1.Location= new Point(pictureBox1.Location.X+stepX,pictureBox1.Location.Y+stepY);
-
         }
-
-      
-
-     
-
-        
-
         private void FrmScreen_MouseClick(object sender, MouseEventArgs e)
         {
             this.Close();   //滑鼠點擊關閉
