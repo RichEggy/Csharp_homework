@@ -29,6 +29,7 @@ namespace HOMEWORK_FORM
         {
             Form10_1 f2= new Form10_1();
             f2.Show();
+
         }
 
         private void btnShowAnswer_Click(object sender, EventArgs e)

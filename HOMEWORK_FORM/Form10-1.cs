@@ -16,11 +16,11 @@ namespace HOMEWORK_FORM
     {
         public Form10_1()
         {
-            InitializeComponent();
-            
-            this.StartPosition = FormStartPosition.CenterScreen;
+            InitializeComponent();         
             min = 1;
             max = 100;
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = (Point)new Size(980, 135);
         }
         
         public int guess, answer, min, max;
@@ -36,7 +36,7 @@ namespace HOMEWORK_FORM
         {
            
             Random rm = new Random();
-            Class1.answer = rm.Next(1, 101);
+            Class1.answer = rm.Next(1, 100);
         }
         public void GuessWhat()
         {
@@ -44,13 +44,13 @@ namespace HOMEWORK_FORM
             do
             {
                 guess = int.Parse(txtGuess.Text);
-                if (guess >= min && guess < max)
+                if (guess >= min && guess <= max)
                 {
                     if (guess == Class1.answer)
                     {
                         MessageBox.Show("Congradulations!!!You Got " + guess + "!!!");
-                        RandomNumber();
                         labInput.Text = ("Please Input A Number.");
+                        RandomNumber();
                         break;
                     }
                     else if (guess > Class1.answer)
