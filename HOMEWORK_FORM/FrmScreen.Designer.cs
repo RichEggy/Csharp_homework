@@ -62,8 +62,8 @@
             this.Name = "FrmScreen";
             this.Text = "Screen Saver";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FrmScreen_MouseClick);
-         
+            
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FrmScreen_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

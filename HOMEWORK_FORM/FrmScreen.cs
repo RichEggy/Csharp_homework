@@ -18,6 +18,8 @@ namespace HOMEWORK_FORM
             InitializeComponent();
         }
         int stepX = 8, stepY = 8; //控制水平跟垂直移動距離
+        int previousX=Cursor.Position.X;
+        int previousY=Cursor.Position.Y;
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -27,10 +29,21 @@ namespace HOMEWORK_FORM
                 stepY = 0 - stepY;//正變負，負變正，變換方向
             pictureBox1.Location= new Point(pictureBox1.Location.X+stepX,pictureBox1.Location.Y+stepY);
         }
-        private void FrmScreen_MouseClick(object sender, MouseEventArgs e)
+
+        private void FrmScreen_MouseMove(object sender, MouseEventArgs e)
         {
-            this.Close();   //滑鼠點擊關閉
+            int currentX = Cursor.Position.X;
+            int currentY = Cursor.Position.Y;
+            if (currentX != previousX && currentY != previousY)
+            {
+                this.Close();
+            }
         }
+
+        //private void FrmScreen_MouseClick(object sender, MouseEventArgs e)
+        //{
+        //    this.Close();   //滑鼠點擊關閉
+        //}
 
     }
 }
