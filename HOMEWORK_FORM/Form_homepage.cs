@@ -159,5 +159,17 @@ namespace HOMEWORK_FORM
             f10.Left = 0;
             splitContainer2.Panel2.Controls.Add(f10);
         }
+
+        private void btnAlarm_Click(object sender, EventArgs e)
+        {
+            while (splitContainer2.Panel2.Controls.Count > 0)
+                splitContainer2.Panel2.Controls[0].Dispose();
+            Form12 f12 = new Form12();
+            f12.TopLevel = false;
+            f12.Visible = true;
+            f12.Top = 0;
+            f12.Left = 0;
+            splitContainer2.Panel2.Controls.Add(f12);
+        }
     }
 }
