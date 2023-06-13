@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnGuess = new System.Windows.Forms.Button();
+            this.btnShowAnswer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -45,7 +46,7 @@
             // btnGuess
             // 
             this.btnGuess.Font = new System.Drawing.Font("Consolas", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuess.Location = new System.Drawing.Point(301, 307);
+            this.btnGuess.Location = new System.Drawing.Point(67, 291);
             this.btnGuess.Name = "btnGuess";
             this.btnGuess.Size = new System.Drawing.Size(167, 42);
             this.btnGuess.TabIndex = 2;
@@ -53,11 +54,23 @@
             this.btnGuess.UseVisualStyleBackColor = true;
             this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
             // 
+            // btnShowAnswer
+            // 
+            this.btnShowAnswer.Font = new System.Drawing.Font("Consolas", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowAnswer.Location = new System.Drawing.Point(516, 291);
+            this.btnShowAnswer.Name = "btnShowAnswer";
+            this.btnShowAnswer.Size = new System.Drawing.Size(203, 40);
+            this.btnShowAnswer.TabIndex = 5;
+            this.btnShowAnswer.Text = "Show Answer";
+            this.btnShowAnswer.UseVisualStyleBackColor = true;
+            this.btnShowAnswer.Click += new System.EventHandler(this.btnShowAnswer_Click);
+            // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnShowAnswer);
             this.Controls.Add(this.btnGuess);
             this.Controls.Add(this.label1);
             this.Name = "Form10";
@@ -71,5 +84,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGuess;
+        private System.Windows.Forms.Button btnShowAnswer;
     }
 }

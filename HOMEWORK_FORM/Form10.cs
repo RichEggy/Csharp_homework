@@ -16,13 +16,24 @@ namespace HOMEWORK_FORM
         public Form10()
         {
             InitializeComponent();
+            RandomNumber();
         }
-
+        
+        public void RandomNumber()
+        {
+           
+            Random rm = new Random();
+            Class1.answer = rm.Next(1, 101);
+        }
         private void btnGuess_Click(object sender, EventArgs e)
         {
             Form10_1 f2= new Form10_1();
             f2.Show();
         }
 
+        private void btnShowAnswer_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Answer: " + Class1.answer.ToString());
+        }
     }
 }

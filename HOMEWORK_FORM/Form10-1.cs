@@ -17,30 +17,26 @@ namespace HOMEWORK_FORM
         public Form10_1()
         {
             InitializeComponent();
-            RandomNumber();
+            
             this.StartPosition = FormStartPosition.CenterScreen;
+            min = 1;
+            max = 100;
         }
         
         public int guess, answer, min, max;
-
+        
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             txtGuess.Text = "";
             
         }
-
-        private void btnShowAnswer_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Answer: "+answer.ToString());
-        }
-
+       
         public void RandomNumber()
         {
-            min = 1;
-            max = 100;
+           
             Random rm = new Random();
-            answer = rm.Next(1, 101);
+            Class1.answer = rm.Next(1, 101);
         }
         public void GuessWhat()
         {
@@ -50,20 +46,20 @@ namespace HOMEWORK_FORM
                 guess = int.Parse(txtGuess.Text);
                 if (guess >= min && guess < max)
                 {
-                    if (guess == answer)
+                    if (guess == Class1.answer)
                     {
                         MessageBox.Show("Congradulations!!!You Got " + guess + "!!!");
                         RandomNumber();
                         labInput.Text = ("Please Input A Number.");
                         break;
                     }
-                    else if (guess > answer)
+                    else if (guess > Class1.answer)
                     {
                         max = guess;
                         labInput.Text = ("Too Large!!!\nBetween " + min + " and " + guess);
 
                     }
-                    else if (guess < answer)
+                    else if (guess < Class1.answer)
                     {
                         min = guess;
                         labInput.Text = ("Too Small!!!\nBetween " + guess + " and " + max);
@@ -91,7 +87,5 @@ namespace HOMEWORK_FORM
             }
             else { GuessWhat(); }
         }
-
-
     }
 }

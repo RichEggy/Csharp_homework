@@ -14,4 +14,8 @@ namespace HOMEWORK_FORM
         public static double totalloan,totalpay, year, rate, monthpay;
         
     }
+    public class Class1
+    {
+        public static int answer;
+    }
 }

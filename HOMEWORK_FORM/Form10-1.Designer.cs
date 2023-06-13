@@ -32,7 +32,6 @@
             this.btnEnter = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.txtGuess = new System.Windows.Forms.TextBox();
-            this.btnShowAnswer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labInput
@@ -70,34 +69,23 @@
             // txtGuess
             // 
             this.txtGuess.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGuess.Location = new System.Drawing.Point(122, 182);
+            this.txtGuess.Location = new System.Drawing.Point(122, 253);
             this.txtGuess.Name = "txtGuess";
             this.txtGuess.Size = new System.Drawing.Size(203, 43);
             this.txtGuess.TabIndex = 3;
-            // 
-            // btnShowAnswer
-            // 
-            this.btnShowAnswer.Font = new System.Drawing.Font("Consolas", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowAnswer.Location = new System.Drawing.Point(122, 318);
-            this.btnShowAnswer.Name = "btnShowAnswer";
-            this.btnShowAnswer.Size = new System.Drawing.Size(203, 40);
-            this.btnShowAnswer.TabIndex = 4;
-            this.btnShowAnswer.Text = "Show Answer";
-            this.btnShowAnswer.UseVisualStyleBackColor = true;
-            this.btnShowAnswer.Click += new System.EventHandler(this.btnShowAnswer_Click);
             // 
             // Form10_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnShowAnswer);
             this.Controls.Add(this.txtGuess);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.labInput);
             this.Name = "Form10_1";
             this.Text = "Don\'t Cheat ";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,6 +97,5 @@
         private System.Windows.Forms.Button btnEnter;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.TextBox txtGuess;
-        private System.Windows.Forms.Button btnShowAnswer;
     }
 }
