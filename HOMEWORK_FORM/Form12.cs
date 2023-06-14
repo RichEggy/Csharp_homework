@@ -39,7 +39,7 @@ namespace HOMEWORK_FORM
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             IsNum();
-            b = false;      
+            b = false;    
         }      
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -58,7 +58,8 @@ namespace HOMEWORK_FORM
                             b = true;//證明時間剛好到了
                             MessageBox.Show("好了啦到了啦");
                             Form12_1 form12_1 = new Form12_1();
-                            form12_1.Show();                      
+                            form12_1.Show();     
+                            checkBox1.Checked = false;
                         }
                     }
                 }
